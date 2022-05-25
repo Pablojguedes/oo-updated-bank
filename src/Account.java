@@ -27,7 +27,13 @@ public abstract class Account implements AccountInterface {
 
 	@Override
 	public void withdraw(double value) {
-		amount -= value;
+		try {
+			OperationValidator.validateOperation(value, this);
+			amount -= value;
+		}
+		catch(InvalidOperationException e){
+			System.out.println(e.getMessage());
+		}
 	}
 
 	@Override

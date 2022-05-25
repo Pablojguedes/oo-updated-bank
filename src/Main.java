@@ -10,7 +10,7 @@ public class Main {
 		checkingAccount.deposit(100);
 		checkingAccount.printExtract();
 
-		checkingAccount.transfer(100, poupanca);
+		checkingAccount.transfer(110, poupanca);
 		checkingAccount.printExtract();
 	}
 

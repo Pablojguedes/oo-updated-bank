@@ -56,4 +56,8 @@ public class Client {
 				addresses.remove(addressToRemove);
 		}
 	}
+
+	public void printClientName(){
+		System.out.println(this.firstName + " " + this.lastName);
+	}
 }

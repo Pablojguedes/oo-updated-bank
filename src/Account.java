@@ -34,6 +34,7 @@ public abstract class Account implements AccountInterface {
 		catch(InvalidOperationException e){
 			System.out.println(e.getMessage());
 		}
+
 	}
 
 	@Override
@@ -48,7 +49,7 @@ public abstract class Account implements AccountInterface {
 	}
 
 	protected void printInfo() {
-		System.out.printf("%s%s %s%n%s%d%n%s%d%n%s%.2f%n",
+		System.out.printf("%s%s %s%n%s%d%n%s%d%n%s%.2f%n%n",
 			"Client: ", this.client.getFirstName(), this.client.getLastName(),
 			"Agency: ", this.getAgency(),
 			"Number: ", this.number,

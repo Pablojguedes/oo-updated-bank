@@ -1,8 +1,8 @@
 public class Main {
-
 	public static void main(String[] args) {
-		Cliente venilton = new Cliente();
-		venilton.setNome("Venilton");
+
+		Client client1 = new Client("Pablo", "Guedes", "111.222.333-44",
+			"995651288");
 		
 		Conta cc = new ContaCorrente(venilton);
 		Conta poupanca = new ContaPoupanca(venilton);

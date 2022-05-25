@@ -3,7 +3,7 @@ import java.util.List;
 public class Banco {
 
     private String nome;
-    private List<Conta> contas;
+    private List<Account> accounts;
 
     public String getNome() {
         return nome;
@@ -13,12 +13,12 @@ public class Banco {
         this.nome = nome;
     }
 
-    public List<Conta> getContas() {
-        return contas;
+    public List<Account> getContas() {
+        return accounts;
     }
 
-    public void setContas(List<Conta> contas) {
-        this.contas = contas;
+    public void setContas(List<Account> accounts) {
+        this.accounts = accounts;
     }
 
 }
